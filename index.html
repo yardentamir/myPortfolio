@@ -5,14 +5,16 @@
     <title>Yarden portfolio</title>
     <meta
       name="description"
-      content="אתר תיק העבודות של ירדן טמיר במסגרת תואר טכנולוגיות למידה"
+      content="Yarden Tamir's portfolio site as part of a degree of learning technologies"
     />
-    <meta name="keywords" content="ירדן טמיר, תיק עבודות" />
-    <meta name="author" content="ירדן טמיר" />
+    <meta name="keywords" content="portfolio, Yarden Tamir, Web developer, Israel" />
+    <meta name="author" content="Yarden Tamir" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
+    <meta name="theme-color" content="#4285f4">
+    <link rel="shortcut icon" type="image/png" href="images\669948_html_code_coding_programming_web_icon.png"/>
 
     <!-- CSS -->
     <!--<link href="styles/reset.css" rel="stylesheet" />-->
@@ -21,6 +23,9 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     <script
@@ -31,10 +36,8 @@
     <script src="js/myScript.js"></script>
   </head>
   <body>
-    <div id="container">
-      <!--Nav-->
-      <div id="navdiv">
-        <nav>
+    <!--Nav Web-->
+        <nav role="navigation" id="navdiv" class="hidden-style-ops">
           <ul>
             <li>
               <a href="index.html">Homepage</a>
@@ -44,10 +47,28 @@
             <li><a href="yetzug.html">Visual representations</a></li>
           </ul>
         </nav>
-      </div>
+
+      <!--Nav mobile-->
+            <nav role="navigation" id="nav-mobile" class="hidden-style">
+              <div id="menuToggle">
+                <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              <ul id="menu">
+                <li>
+                  <a href="index.html">Homepage</a>
+                </li>
+                <li><a href="graphic.html">My Story</a></li>
+                <li><a href="tiksuret.html">Visual Communication</a></li>
+                <li><a href="yetzug.html">Visual representations</a></li>
+              </ul>
+             </div>
+            </nav>
+
       <!-- Home Page -->
       <div id="homepage">
-        <div>
+        <div class="padding-15">
           <header>
           <h1>Yarden portfolio</h1>
           <h3>
@@ -76,43 +97,42 @@
             at Holon Institute of Technology.
           </p>
           </section>
+        </article>
+        <footer>
+          <h3>Contact me</h3>
+            <div class="wrapper">
+              <a href="https://www.facebook.com/yarden.tamir1"
+              target="_blank">
+              <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                  <i class="fab fa-facebook-f"></i></span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/tamiryarden/"
+                  target="_blank">
+              <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span> <i class="fab fa-instagram"></i></span>
+              </div>
+            </a>
+              <a
+                  href="https://www.linkedin.com/in/yarden-tamir-a1a986197"
+                  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">Linkedin</div>
+                <span>              
+                  <i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+            <a href="https://github.com/yardentamir"
+                  target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
         </div>
-      </article>
-      <footer>
-        <h3>Contact me</h3>
-          <div class="wrapper">
-            <a href="https://www.facebook.com/yarden.tamir1"
-            target="_blank">
-            <div class="icon facebook">
-              <div class="tooltip">Facebook</div>
-                <i class="fab fa-facebook-f"></i></span>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/tamiryarden/"
-                target="_blank">
-            <div class="icon instagram">
-              <div class="tooltip">Instagram</div>
-              <span> <i class="fab fa-instagram"></i></span>
-            </div>
-          </a>
-            <a
-                href="https://www.linkedin.com/in/yarden-tamir-a1a986197"
-                target="_blank">
-            <div class="icon linkedin">
-              <div class="tooltip">Linkedin</div>
-              <span>              
-                <i class="fab fa-linkedin"></i></span>
-            </div>
-          </a>
-          <a href="https://github.com/yardentamir"
-                target="_blank">
-            <div class="icon github">
-              <div class="tooltip">Github</div>
-              <span><i class="fab fa-github"></i></span>
-            </div>
-          </a>
+      </footer>
       </div>
-    </footer>
-    </div>
   </body>
 </html>

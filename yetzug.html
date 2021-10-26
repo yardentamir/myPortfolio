@@ -6,103 +6,131 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
+    <meta name="theme-color" content="#4285f4" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images\669948_html_code_coding_programming_web_icon.png"
+    />
     <title>תיק העבודות של ירדן טמיר</title>
     <!-- CSS -->
     <!--<link href="styles/reset.css" rel="stylesheet" />-->
     <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap"
+      rel="stylesheet"
+    />
     <!--scripts-->
+    <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/myScript.js"></script>
   </head>
   <body>
+    <!--Nav Web-->
+    <nav role="navigation" id="navdiv" class="hidden-style-ops">
+      <ul>
+        <li>
+          <a href="index.html">Homepage</a>
+        </li>
+        <li><a href="graphic.html">My Story</a></li>
+        <li><a href="tiksuret.html">Visual Communication</a></li>
+        <li><a href="yetzug.html">Visual representations</a></li>
+      </ul>
+    </nav>
+
+    <!--Nav mobile-->
+    <nav role="navigation" id="nav-mobile" class="hidden-style">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li>
+            <a href="index.html">Homepage</a>
+          </li>
+          <li><a href="graphic.html">My Story</a></li>
+          <li><a href="tiksuret.html">Visual Communication</a></li>
+          <li><a href="yetzug.html">Visual representations</a></li>
+        </ul>
+      </div>
+    </nav>
     <div id="container">
-      <div id="navdiv">
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Homepage</a>
-            </li>
-            <li><a href="graphic.html">My Story</a></li>
-            <li><a href="tiksuret.html">Visual Communication</a></li>
-            <li><a href="yetzug.html">Visual representations</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <header>
-          <h1>ייצוג חזותי</h1>
-          <p>במסגרת הקורס צריך לייצג נתונים מייצגים על הלקוח</p>
-        </header>
-        <section>
-          <h2>המסר</h2>
-          <p>
-            המסר הוא הדגשת החיים הטובים של אנטון, אוהב בילויים ובעיקר נהנה מכל
-            רגע בחייו הטובים.<br />
-            השתמשתי בייצוג זה מכוון שהנוף מראה בצורה טובה את החיים הטובים ים
-            משקף את ההנאה מהחיים, את האווירה של הטוב.<br />
-            הסימבולים מייצגים כל חלק בנפרד שמדגישים למה אנטון הוא אדם שחיי את
-            החיים הטובים.<br />
-          </p>
-        </section>
-        <section>
-          <h2>תהליך העבודה</h2>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="images/anton.jpg">
-                <img
-                  src="images/anton.jpg"
-                  alt="Post"
-                  class="center"
-                  width="300"
-                  height="200"
-                />
-              </a>
-              <div class="desc">התוצר הראשון</div>
-            </div>
+      <header>
+        <h1>ייצוג חזותי</h1>
+        <p>במסגרת הקורס צריך לייצג נתונים מייצגים על הלקוח</p>
+      </header>
+      <section>
+        <h2>המסר</h2>
+        <p>
+          המסר הוא הדגשת החיים הטובים של אנטון, אוהב בילויים ובעיקר נהנה מכל רגע
+          בחייו הטובים.<br />
+          השתמשתי בייצוג זה מכוון שהנוף מראה בצורה טובה את החיים הטובים ים משקף
+          את ההנאה מהחיים, את האווירה של הטוב.<br />
+          הסימבולים מייצגים כל חלק בנפרד שמדגישים למה אנטון הוא אדם שחיי את
+          החיים הטובים.<br />
+        </p>
+      </section>
+      <section>
+        <h2>תהליך העבודה</h2>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/anton.jpg">
+              <img
+                src="images/anton.jpg"
+                alt="Post"
+                class="center"
+                width="300"
+                height="200"
+              />
+            </a>
+            <div class="desc">התוצר הראשון</div>
           </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="images/anton2.jpg">
-                <img
-                  src="images/anton2.jpg"
-                  alt="Post"
-                  class="center"
-                  width="300"
-                  height="200"
-                />
-              </a>
-              <div class="desc">התוצר השני</div>
-            </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/anton2.jpg">
+              <img
+                src="images/anton2.jpg"
+                alt="Post"
+                class="center"
+                width="300"
+                height="200"
+              />
+            </a>
+            <div class="desc">התוצר השני</div>
           </div>
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="images/anton3.jpg">
-                <img
-                  src="images/anton3.jpg"
-                  alt="Post"
-                  class="center"
-                  width="300"
-                  height="200"
-                />
-              </a>
-              <div class="desc">התוצר השלישי</div>
-            </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery">
+            <a target="_blank" href="images/anton3.jpg">
+              <img
+                src="images/anton3.jpg"
+                alt="Post"
+                class="center"
+                width="300"
+                height="200"
+              />
+            </a>
+            <div class="desc">התוצר השלישי</div>
           </div>
-          <div class="responsive">
-            <div class="gallery" id="bigger">
-              <a target="_blank" href="images/anton11111.jpg">
-                <img
-                  src="images/anton11111.jpg"
-                  alt="Post"
-                  class="center"
-                  width="300"
-                  height="200"
-                />
-              </a>
-              <div class="desc">התוצר הסופי</div>
-            </div>
+        </div>
+        <div class="responsive">
+          <div class="gallery" id="bigger">
+            <a target="_blank" href="images/anton11111.jpg">
+              <img
+                src="images/anton11111.jpg"
+                alt="Post"
+                class="center"
+                width="300"
+                height="200"
+              />
+            </a>
+            <div class="desc">התוצר הסופי</div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>

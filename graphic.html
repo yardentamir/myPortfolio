@@ -6,19 +6,39 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=yes"
     />
+    <meta name="theme-color" content="#4285f4">
+    <link rel="shortcut icon" type="image/png" href="images\669948_html_code_coding_programming_web_icon.png"/>
     <title>My Story</title>
     <!-- CSS -->
     <!--<link href="styles/reset.css" rel="stylesheet" />-->
     <link href="styles/myStyle.css" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <!--scripts-->
+    <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/myScript.js"></script>
   </head>
   <body>
-    <div id="container">
-      <div id="navdiv">
-        <nav>
-          <ul>
+    <nav role="navigation" id="navdiv" class="hidden-style-ops">
+      <ul>
+        <li>
+          <a href="index.html">Homepage</a>
+        </li>
+        <li><a href="graphic.html">My Story</a></li>
+        <li><a href="tiksuret.html">Visual Communication</a></li>
+        <li><a href="yetzug.html">Visual representations</a></li>
+      </ul>
+    </nav>
+
+  <!--Nav mobile-->
+        <nav role="navigation" id="nav-mobile" class="hidden-style">
+          <div id="menuToggle">
+            <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+          <ul id="menu">
             <li>
               <a href="index.html">Homepage</a>
             </li>
@@ -26,9 +46,9 @@
             <li><a href="tiksuret.html">Visual Communication</a></li>
             <li><a href="yetzug.html">Visual representations</a></li>
           </ul>
+         </div>
         </nav>
-      </div>
-      <div>
+    <div id="container">
         <header>
         <h1>My Story</h1>
         <h2>הסיפור שלי פרויקט גמר 2020</h2>
@@ -85,8 +105,7 @@
             Your browser does not support the video tag.
           </video>
         </device>
-        </div>
-    </article>
+      </article>
     </div>
   </body>
 </html>

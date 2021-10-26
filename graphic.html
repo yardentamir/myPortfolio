@@ -2,10 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Digital graphics</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>My Story</title>
     <!-- CSS -->
     <!--<link href="styles/reset.css" rel="stylesheet" />-->
     <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!--scripts-->
+    <script src="js/myScript.js"></script>
   </head>
   <body>
     <div id="container">
@@ -15,21 +22,58 @@
             <li>
               <a href="index.html">Homepage</a>
             </li>
-            <li><a href="graphic.html">Digital graphics</a></li>
+            <li><a href="graphic.html">My Story</a></li>
             <li><a href="tiksuret.html">Visual Communication</a></li>
             <li><a href="yetzug.html">Visual representations</a></li>
           </ul>
         </nav>
       </div>
-      <div class="Wbackground">
-        <h1>Digital graphics</h1>
-        <h2>coming soon!</h2>
+      <div>
+        <h1>My Story</h1>
+        <h2>הסיפור שלי פרויקט גמר 2020</h2>
+        <p>
+          סביבה שיתופית אינטראקטיבית המותאמת למכשירים ניידים בקרב מטופלים בגילאי
+          11-18, בשיתוף עם ארגון Youdo. <br />
+          הסביבה מחולקת לשלושה פרקים: הכרות, אשפוז ושחרור ובכל פרק יהיו שאלות
+          הקשורות לאותו נושא.<br />
+          המטופלים יתבקשו לענות על שאלות אינטראקטיביות שיתופיות של טקסט ו/או
+          תמונה ולשתף מידע אישי ורגשי, על מנת לחלוק אותו עם הצוות החינוכי
+          והרפואי ולייצר לעצמם סיפור דיגיטלי אישי לאורך כל תהליך השהות בבית
+          החולים.<br />
+          לצוות החינוכי והרפואי יש צד ניהול, שבו הם יכולים להיחשף לתשובות
+          המטופלים ולהתאים את הסביבה לכל אחד מהם, על ידי חשיפה והסתרה של פרקים
+          ושאלות וכך להכיר אותם טוב יותר בשביל להקל על חווית הביקור שלהם בבית
+          החולים.<br />
+          בסרטונים המצורפים ניתן לראות את תהליך יצירת הסיפור האישי הדיגיטלי של
+          כל מטופל ואת אופן תפעול צד הניהול.
+        </p>
+        <h3>לדוגמא- טלפון הורה: 1111 , סיסמא: 1111</h3>
+        <div class="frame">
+          <button
+            class="custom-btn btn-11"
+            onclick="window.open('http://projects.telem-hit.net/2020/myStory_yardenAmit/','_blank');"
+            target="_blank"
+          >
+            Go to the application
+          </button>
+        </div>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Qpv-jlfDRf8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <p>listen to music</p>
         <div class="music">
           <video width="320" height="100" controls="controls">
             <source
               src="audio/הללויה לכבוד שנת ה 70 למדינה.mp3"
               type="audio/mp3"
+              title="halleloya"
             />
             <source
               src="audio/הללויה לכבוד שנת ה 70 למדינה.ogg"

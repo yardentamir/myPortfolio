@@ -24,13 +24,14 @@ body {
   align-items: center;
 }
 html {
-  background-color: rgb(255, 208, 249);
+  background: linear-gradient(315deg, #ffffff, rgb(255, 196, 247));
 }
 
 ul {
   list-style: none;
   padding: 0;
 }
+
 #imgWrapper img {
   filter: grayscale();
   width: 150px;
@@ -227,28 +228,12 @@ div.desc {
   width: 400px;
   margin-left: 50px;
 }
-.Wbackground .video {
+.video {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
   text-align: center;
-}
-.Wbackground {
-  border-radius: 15px 50px 30px;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  padding: 30px;
-}
-
-#connectFooter > li {
-  display: inline;
-}
-
-#connectFooter > li > i {
-  width: 300px;
-  height: 300px;
 }
 
 .fullwidth {
@@ -256,15 +241,176 @@ div.desc {
   position: inline-block !important;
 }
 
-#connectFooter > li {
-  transition: all 0.2s ease-in-out;
+#container {
+  width: 90%;
 }
 
-#connectFooter > li:hover {
-  transform: scale(1.1);
+.wrapper {
+  display: inline-flex;
 }
 
-.fa-facebook:hover,
-.fa-linkedin:hover {
-  color: red !important;
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999 !important;
+  color: #ffffff !important;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #306ee1 !important;
+  color: #ffffff !important;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.fa-linkedin,
+.fa-facebook-f,
+.fa-instagram {
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.linkedin:hover .fa-linkedin,
+.facebook:hover .fa-facebook-f,
+.instagram:hover .fa-instagram {
+  color: #ffffff !important;
+}
+
+/* for btn */
+.frame {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom-btn {
+  width: 50%;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-weight: 500;
+  color: white;
+  background: #333333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* btn 11 */
+.btn-11 {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.btn-11:hover {
+  background: pink;
+  color: black;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
 }

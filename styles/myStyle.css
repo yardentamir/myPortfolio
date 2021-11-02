@@ -1,3 +1,20 @@
+:root {
+  --main-text: black;
+  --box-shadows-reg-img: rgba(0, 0, 0, 0.5);
+  --gallery-box-shadows-p1: rgba(0, 0, 0, 0.6);
+  --gallery-box-shadows-p2: rgba(0, 0, 0, 0.19);
+  --gallery-background-color: rgba(178, 0, 255, 0.3);
+  --galley-border-color: #ccc;
+  --hover-links-gallery-bg-color: palevioletred;
+  --active-color-btn: deeppink;
+  --social-icons-box-shadow: rgba(0, 0, 0, 0.1);
+  --icons-color: #ffffff;
+  ---tool-tip-bg-color: #ffffff;
+  --white-text: #ffffff;
+  --mobile-menu-color: #1e1e23;
+  --container-and-nav-bg-color: rgba(218, 188, 231, 0.65);
+}
+
 @font-face {
   font-family: "SuezOne-Regular";
   src: url("../fonts/SuezOne-Regular.eot");
@@ -53,7 +70,7 @@ h2 {
   max-width: 140px;
   border-radius: 50%;
   border: 5px solid whitesmoke;
-  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px 2px var(--box-shadows-reg-img);
   transition: filter 0.4s ease-in-out;
 }
 
@@ -65,19 +82,19 @@ h2 {
 
 #navdiv > ul li {
   display: inline-block;
-  color: black;
+  color: var(--main-text);
 }
 
 #navdiv > ul li a {
   display: block;
-  background: rgba(218, 188, 231, 0.65);
-  color: black;
+  background: var(--container-and-nav-bg-color);
+  color: var(--main-text);
   height: 15%;
   padding: 10px;
   text-decoration: none;
   text-align: center;
   margin-right: 20px;
-  border: black solid 2px;
+  border: var(--main-text) solid 2px;
   border-radius: 15px 50px 30px;
   font-size: clamp(14px, 3vw, 20px);
   transition: all 0.2s ease-in-out;
@@ -88,13 +105,13 @@ h2 {
   position: absolute center;
 }
 #navdiv ul li a:hover {
-  background-color: palevioletred;
+  background-color: var(--hover-links-gallery-bg-color);
   display: inline-block;
   transform: scale(1.1);
 }
 
 #navdiv ul li a:active {
-  background-color: deeppink;
+  background-color: var(--active-color-btn);
 }
 
 /* gallery images styling */
@@ -110,18 +127,20 @@ h2 {
 
 .gallery {
   margin: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background: rgba(178, 0, 255, 0.3);
+  border: 1px solid var(--galley-border-color);
+  box-shadow: 0 4px 8px 0 var(--gallery-box-shadows-p1),
+    0 6px 20px 0 var(--gallery-box-shadows-p2);
+  background: --gallery-background-color;
 }
 
 .tiksuretImages {
   margin: 0 auto;
-  border: 1px solid #ccc;
+  border: 1px solid var(--galley-border-color);
   width: 350px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 var(--gallery-box-shadows-p1),
+    0 6px 20px 0 var(--gallery-box-shadows-p2);
   text-align: center;
-  background: rgba(178, 0, 255, 0.3);
+  background: --gallery-background-color;
 }
 
 .tiksuretImages:hover {
@@ -152,12 +171,12 @@ div.desc {
 }
 
 div.gallery {
-  border: 1px solid #ccc;
+  border: 1px solid var(--galley-border-color);
 }
 
 div.gallery:hover {
   border: 1px solid #777;
-  background-color: palevioletred;
+  background-color: var(--hover-links-gallery-bg-color);
 }
 
 div.gallery img {
@@ -175,8 +194,8 @@ div.desc {
 }
 
 #homepage {
-  background: rgba(218, 188, 231, 0.65);
-  border: solid black 2px;
+  background: var(--container-and-nav-bg-color);
+  border: solid var(--main-text) 2px;
   border-radius: 15px 50px 30px;
   width: 85%;
   height: auto;
@@ -201,7 +220,7 @@ div.desc {
 
 .wrapper .icon {
   position: relative;
-  background-color: #ffffff;
+  background-color: var(--icons-color);
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
@@ -213,7 +232,7 @@ div.desc {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px var(--social-icons-box-shadow);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -222,11 +241,11 @@ div.desc {
   position: absolute;
   top: 0;
   font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
+  background-color: var(---tool-tip-bg-color);
+  color: var(--white-text);
   padding: 5px 8px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px var(--social-icons-box-shadow);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -237,7 +256,7 @@ div.desc {
   content: "";
   height: 8px;
   width: 8px;
-  background-color: #ffffff;
+  background-color: var(---tool-tip-bg-color);
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
@@ -253,35 +272,35 @@ div.desc {
 
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px -1px 0px var(--social-icons-box-shadow);
 }
 
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background-color: #3b5999;
-  color: #ffffff;
+  color: var(--icons-color);
 }
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
   background-color: #306ee1;
-  color: #ffffff;
+  color: var(--icons-color);
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background-color: #333333;
-  color: #ffffff;
+  color: var(--icons-color);
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
   background-color: #e1306c;
-  color: #ffffff;
+  color: var(--icons-color);
 }
 
 .fa-linkedin,
@@ -295,7 +314,7 @@ div.desc {
 .facebook:hover .fa-facebook-f,
 .instagram:hover .fa-instagram,
 .github:hover .fa-github {
-  color: #ffffff !important;
+  color: var(--icons-color) !important;
 }
 
 /* for btn in page - my story */
@@ -312,7 +331,7 @@ button {
   /* width: 50%; */
   height: 40px;
   padding: 10px 25px;
-  border: 2px solid #000;
+  border: 2px solid var(--main-text);
   font-weight: 500;
   color: white;
   background: #333333;
@@ -333,7 +352,7 @@ button {
 }
 .btn-11:hover {
   background: pink;
-  color: black;
+  color: var(--main-text);
 }
 .btn-11:before {
   position: absolute;
@@ -410,7 +429,7 @@ button {
 
 #menu a {
   text-decoration: none;
-  color: #1e1e23;
+  color: var(--mobile-menu-color);
   opacity: 1;
   font-family: "work sans", sans serif;
   font-size: 4.5vw;
@@ -422,7 +441,7 @@ button {
   list-style-type: none;
 }
 #nav-mobile {
-  background-color: #1e1e23;
+  background-color: var(--mobile-menu-color);
   height: 65px;
 }
 
